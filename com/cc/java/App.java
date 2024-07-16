@@ -4,11 +4,7 @@ public class App {
     
     public static void main(String[] args) {
 
-        // Instanziierung  --> Erzeugen eines Objektes
-        // System.out.println(new Cat());
-
-        // cat --> Referenzvariable
-        // Cat --> Referenztyp(Klasse)
+  // Custom-Konstruktor
         Cat cat = new Cat("Grisabella", "white", 29);
         output("Blick von aussen: " + cat);
         output("Blick von innen: " + cat.getInstanceVariable());
@@ -16,7 +12,7 @@ public class App {
         // Werte ausgeben
         output(cat.name);
         output(cat.furColor);
-        output(Integer.toString(cat.age)); // Explizite Typumwandlung
+        output(Integer.toString(cat.age));
 
         System.out.println("----------------------------");
 
@@ -27,10 +23,9 @@ public class App {
               // Werte ausgeben
               output(cat2.name);
               output(cat2.furColor);
-              output(Integer.toString(cat2.age)); // Explizite Typumwandlung
+              output(Integer.toString(cat2.age));
     }
 
-      // Statische Methode, die in der Klasse ausgeführt wird ...
     public static void output(String outputStr){
         System.out.println(outputStr);
     }
