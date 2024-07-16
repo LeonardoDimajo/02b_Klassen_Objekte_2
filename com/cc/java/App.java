@@ -9,21 +9,25 @@ public class App {
 
         // cat --> Referenzvariable
         // Cat --> Referenztyp(Klasse)
-        Cat cat = new Cat();
+        Cat cat = new Cat("Grisabella", "white", 29);
         output("Blick von aussen: " + cat);
         output("Blick von innen: " + cat.getInstanceVariable());
 
+        // Werte ausgeben
         output(cat.name);
         output(cat.furColor);
-        // Explizite Typumwandlung
-        output(Integer.toString(cat.age));
+        output(Integer.toString(cat.age)); // Explizite Typumwandlung
 
         System.out.println("----------------------------");
 
-        // Cat cat2 = new Cat();
-        // output("Blick von aussen: " + cat2);
-        // output("Blick von innen: " + cat2.getInstanceVariable());
-
+        Cat cat2 = new Cat("Alonzo", "grey", 35);
+        output("Blick von aussen: " + cat2);
+        output("Blick von innen: " + cat2.getInstanceVariable());
+      
+              // Werte ausgeben
+              output(cat2.name);
+              output(cat2.furColor);
+              output(Integer.toString(cat2.age)); // Explizite Typumwandlung
     }
 
       // Statische Methode, die in der Klasse ausgeführt wird ...
